@@ -1,0 +1,13 @@
+BusinessName,id,title,"country code ",status
+Catering Online Shop - 2,alexhawkins.mt@outlook.com,Existing,IN,404
+Catering Online Shop - 2,alexhawkins.mt@@outlook.com,invalid Email,IN,404
+Catering Online Shop - 2,"   ",Empty Email,IN,404
+Catering Online Shop - 2,"      ",Blank Space,IN,404
+Catering Online Shop   - 2,,Remove Email,IN,404
+,alexhawkins.mt@outlook.com,Empty address,IN,404
+"       ",alexhawkins.mt@outlook.com,Blank space address,IN,404
+,alexhawkins.mt@outlook.com,Remove Address,IN,404
+Catering Online Shop   - 2,alexhawkins.mt@outlook.com,"Invalid Country Code ",KPPP,411
+Catering Online Shop   - 2,alexhawkins.mt@outlook.com,Empty Country Code,,404
+Catering Online Shop    -2,alexhawkins.mt@outlook.com,"Blank Space Country Code ","      ",404
+,,,,

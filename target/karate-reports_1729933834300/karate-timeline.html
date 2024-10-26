@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/BusinessDetail[1.1:64]","start":1729933635341,"end":1729933636966,"title":"src\/test\/java\/examples\/BusinessDetail[1.1:64] 14:37:15.341-14:37:16.966 valid Data"},{"id":2,"group":2,"content":"src\/test\/java\/examples\/BusinessDetail[1.2:64]","start":1729933635334,"end":1729933636979,"title":"src\/test\/java\/examples\/BusinessDetail[1.2:64] 14:37:15.334-14:37:16.979 Empty Business ID"},{"id":3,"group":3,"content":"src\/test\/java\/examples\/BusinessDetail[1.3:64]","start":1729933635322,"end":1729933636936,"title":"src\/test\/java\/examples\/BusinessDetail[1.3:64] 14:37:15.322-14:37:16.936 Blank Space Business ID"},{"id":4,"group":4,"content":"src\/test\/java\/examples\/BusinessDetail[1.4:64]","start":1729933635316,"end":1729933636961,"title":"src\/test\/java\/examples\/BusinessDetail[1.4:64] 14:37:15.316-14:37:16.961 Maximum 8 Characters"},{"id":5,"group":5,"content":"src\/test\/java\/examples\/BusinessDetail[1.5:64]","start":1729933635338,"end":1729933636969,"title":"src\/test\/java\/examples\/BusinessDetail[1.5:64] 14:37:15.338-14:37:16.969 Invalid Business ID"},{"id":6,"group":3,"content":"src\/test\/java\/examples\/BusinessDetail[1.6:64]","start":1729933637001,"end":1729933637438,"title":"src\/test\/java\/examples\/BusinessDetail[1.6:64] 14:37:17.001-14:37:17.438 inactive Business ID","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/updateBusiness[1.1:68]","start":1729937978818,"end":1729937980525,"title":"src\/test\/java\/examples\/updateBusiness[1.1:68] 15:49:38.818-15:49:40.525 valid Data"},{"id":2,"group":2,"content":"src\/test\/java\/examples\/updateBusiness[1.2:68]","start":1729937978827,"end":1729937980525,"title":"src\/test\/java\/examples\/updateBusiness[1.2:68] 15:49:38.827-15:49:40.525 Empty Business ID"},{"id":3,"group":3,"content":"src\/test\/java\/examples\/updateBusiness[1.3:68]","start":1729937978802,"end":1729937980544,"title":"src\/test\/java\/examples\/updateBusiness[1.3:68] 15:49:38.802-15:49:40.544 Blank Space Business ID"},{"id":4,"group":4,"content":"src\/test\/java\/examples\/updateBusiness[1.4:68]","start":1729937978815,"end":1729937980516,"title":"src\/test\/java\/examples\/updateBusiness[1.4:68] 15:49:38.815-15:49:40.516 Maximum 8 Characters"},{"id":5,"group":5,"content":"src\/test\/java\/examples\/updateBusiness[1.5:68]","start":1729937978822,"end":1729937980528,"title":"src\/test\/java\/examples\/updateBusiness[1.5:68] 15:49:38.822-15:49:40.528 Invalid Business ID"},{"id":6,"group":1,"content":"src\/test\/java\/examples\/updateBusiness[1.6:68]","start":1729937980565,"end":1729937980962,"title":"src\/test\/java\/examples\/updateBusiness[1.6:68] 15:49:40.565-15:49:40.962 inactive Business ID"},{"id":7,"group":2,"content":"src\/test\/java\/examples\/updateBusiness[1.7:68]","start":1729937980551,"end":1729937980944,"title":"src\/test\/java\/examples\/updateBusiness[1.7:68] 15:49:40.551-15:49:40.944 Deleted Business ID"},{"id":8,"group":5,"content":"src\/test\/java\/examples\/updateBusiness[1.8:68]","start":1729937980583,"end":1729937980946,"title":"src\/test\/java\/examples\/updateBusiness[1.8:68] 15:49:40.583-15:49:40.946 Length check  status"},{"id":9,"group":4,"content":"src\/test\/java\/examples\/updateBusiness[1.9:68]","start":1729937980599,"end":1729937981042,"title":"src\/test\/java\/examples\/updateBusiness[1.9:68] 15:49:40.599-15:49:41.042 Empty status"},{"id":10,"group":3,"content":"src\/test\/java\/examples\/updateBusiness[1.10:68]","start":1729937980609,"end":1729937980982,"title":"src\/test\/java\/examples\/updateBusiness[1.10:68] 15:49:40.609-15:49:40.982 blank space status"},{"id":11,"group":2,"content":"src\/test\/java\/examples\/updateBusiness[1.11:68]","start":1729937980969,"end":1729937981837,"title":"src\/test\/java\/examples\/updateBusiness[1.11:68] 15:49:40.969-15:49:41.837 Valid data","className":"failed"},{"id":12,"group":5,"content":"src\/test\/java\/examples\/updateBusiness[1.12:68]","start":1729937980965,"end":1729937981372,"title":"src\/test\/java\/examples\/updateBusiness[1.12:68] 15:49:40.965-15:49:41.372 invalid Status"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

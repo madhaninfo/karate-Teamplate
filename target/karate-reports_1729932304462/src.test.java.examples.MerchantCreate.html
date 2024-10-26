@@ -1,0 +1,2943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"9b5589c8-212c-4b1a-b1a3-c0f6c2a9fc7b",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.examples.MerchantCreate</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">11</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-10-26 02:14:34 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:67]"><span>[1.1:67]</span> <span>Existing</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.2:67]"><span>[1.2:67]</span> <span>invalid Email</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.3:67]"><span>[1.3:67]</span> <span>Empty Email</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.4:67]"><span>[1.4:67]</span> <span>Blank Space</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.5:67]"><span>[1.5:67]</span> <span>Remove Email</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.6:67]"><span>[1.6:67]</span> <span>Empty address</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.7:67]"><span>[1.7:67]</span> <span>Blank space address</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.8:67]"><span>[1.8:67]</span> <span>Remove Address</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.9:67]"><span>[1.9:67]</span> <span>Invalid Country Code </span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.10:67]"><span>[1.10:67]</span> <span>Empty Country Code</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.11:67]"><span>[1.11:67]</span> <span>Blank Space Country Code </span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/examples/MerchantCreate.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">NFC Detail API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:67]</span>
+                <span class="scenario-name">Existing</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>382</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.31">14:14:32.065 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.32">14:14:32.081 [print] https://dvplatform.mzpv3001.mezzofy.com/v3/master 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.33">mutation {
+    CreateBusiness(input: {
+        BusinessName : &quot;Catering Online Shop - 2&quot;,
+        BusinessEmail: &quot;alexhawkins.mt@outlook.com&quot;,
+        CountryCode: &quot;IN&quot;
+    })
+    {
+        BusinessID
+        BusinessCode
+        BusinessName
+        CountryCode
+        CountryTimeZoneID
+        BusinessStatus
+        CreatedOn
+        UpdatedOn
+        CreatedBy
+        UpdatedBy
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">353</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.57">14:14:32.113 request:
+1 &gt; POST https://dvplatform.mzpv3001.mezzofy.com/v3/master
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 427
+1 &gt; Host: dvplatform.mzpv3001.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation {\n    CreateBusiness(input: {\n        BusinessName : \&quot;Catering Online Shop - 2\&quot;,\n        BusinessEmail: \&quot;alexhawkins.mt@outlook.com\&quot;,\n        CountryCode: \&quot;IN\&quot;\n    })\n    {\n        BusinessID\n        BusinessCode\n        BusinessName\n        CountryCode\n        CountryTimeZoneID\n        BusinessStatus\n        CreatedOn\n        UpdatedOn\n        CreatedBy\n        UpdatedBy\n    }\n}&quot;}
+
+14:14:32.452 response time in milliseconds: 338
+1 &lt; 404
+1 &lt; Date: Sat, 26 Oct 2024 08:44:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 187
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Business Email () Already Registered!. - 4017 - Business Email () Already Registered!. - 20201017&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.58">14:14:32.454 src/test/java/examples/MerchantCreate.feature:58
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 338, url: https://dvplatform.mzpv3001.mezzofy.com/v3/master, response: 
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Business Email () Already Registered!. - 4017 - Business Email () Already Registered!. - 20201017&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+src/test/java/examples/MerchantCreate.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:67]</span>
+                <span class="scenario-name">invalid Email</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>322</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.31">14:14:32.108 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.32">14:14:32.116 [print] https://dvplatform.mzpv3001.mezzofy.com/v3/master 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.33">mutation {
+    CreateBusiness(input: {
+        BusinessName : &quot;Catering Online Shop - 2&quot;,
+        BusinessEmail: &quot;alexhawkins.mt@@outlook.com&quot;,
+        CountryCode: &quot;IN&quot;
+    })
+    {
+        BusinessID
+        BusinessCode
+        BusinessName
+        CountryCode
+        CountryTimeZoneID
+        BusinessStatus
+        CreatedOn
+        UpdatedOn
+        CreatedBy
+        UpdatedBy
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">308</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.57">14:14:32.123 request:
+1 &gt; POST https://dvplatform.mzpv3001.mezzofy.com/v3/master
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 428
+1 &gt; Host: dvplatform.mzpv3001.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation {\n    CreateBusiness(input: {\n        BusinessName : \&quot;Catering Online Shop - 2\&quot;,\n        BusinessEmail: \&quot;alexhawkins.mt@@outlook.com\&quot;,\n        CountryCode: \&quot;IN\&quot;\n    })\n    {\n        BusinessID\n        BusinessCode\n        BusinessName\n        CountryCode\n        CountryTimeZoneID\n        BusinessStatus\n        CreatedOn\n        UpdatedOn\n        CreatedBy\n        UpdatedBy\n    }\n}&quot;}
+
+14:14:32.424 response time in milliseconds: 299
+1 &lt; 404
+1 &lt; Date: Sat, 26 Oct 2024 08:44:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 159
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Invalid Business Email!. - 4007 - Invalid Business Email!. - 20201007&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.58">14:14:32.434 src/test/java/examples/MerchantCreate.feature:58
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 299, url: https://dvplatform.mzpv3001.mezzofy.com/v3/master, response: 
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Invalid Business Email!. - 4007 - Invalid Business Email!. - 20201007&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+src/test/java/examples/MerchantCreate.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:67]</span>
+                <span class="scenario-name">Empty Email</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>278</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.31">14:14:32.106 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.32">14:14:32.121 [print] https://dvplatform.mzpv3001.mezzofy.com/v3/master 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.33">mutation {
+    CreateBusiness(input: {
+        BusinessName : &quot;Catering Online Shop - 2&quot;,
+        BusinessEmail: &quot;   &quot;,
+        CountryCode: &quot;IN&quot;
+    })
+    {
+        BusinessID
+        BusinessCode
+        BusinessName
+        CountryCode
+        CountryTimeZoneID
+        BusinessStatus
+        CreatedOn
+        UpdatedOn
+        CreatedBy
+        UpdatedBy
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">271</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.57">14:14:32.130 request:
+1 &gt; POST https://dvplatform.mzpv3001.mezzofy.com/v3/master
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 404
+1 &gt; Host: dvplatform.mzpv3001.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation {\n    CreateBusiness(input: {\n        BusinessName : \&quot;Catering Online Shop - 2\&quot;,\n        BusinessEmail: \&quot;   \&quot;,\n        CountryCode: \&quot;IN\&quot;\n    })\n    {\n        BusinessID\n        BusinessCode\n        BusinessName\n        CountryCode\n        CountryTimeZoneID\n        BusinessStatus\n        CreatedOn\n        UpdatedOn\n        CreatedBy\n        UpdatedBy\n    }\n}&quot;}
+
+14:14:32.393 response time in milliseconds: 250
+1 &lt; 404
+1 &lt; Date: Sat, 26 Oct 2024 08:44:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 159
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Business Email!. - 4002 - Missing Business Email!. - 20201002&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.58">14:14:32.395 src/test/java/examples/MerchantCreate.feature:58
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 250, url: https://dvplatform.mzpv3001.mezzofy.com/v3/master, response: 
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Business Email!. - 4002 - Missing Business Email!. - 20201002&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+src/test/java/examples/MerchantCreate.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.4:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.4:67]</span>
+                <span class="scenario-name">Blank Space</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>340</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.31">14:14:32.089 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.32">14:14:32.101 [print] https://dvplatform.mzpv3001.mezzofy.com/v3/master 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="4.33">mutation {
+    CreateBusiness(input: {
+        BusinessName : &quot;Catering Online Shop - 2&quot;,
+        BusinessEmail: &quot;      &quot;,
+        CountryCode: &quot;IN&quot;
+    })
+    {
+        BusinessID
+        BusinessCode
+        BusinessName
+        CountryCode
+        CountryTimeZoneID
+        BusinessStatus
+        CreatedOn
+        UpdatedOn
+        CreatedBy
+        UpdatedBy
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">328</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.57">14:14:32.113 request:
+1 &gt; POST https://dvplatform.mzpv3001.mezzofy.com/v3/master
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 407
+1 &gt; Host: dvplatform.mzpv3001.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation {\n    CreateBusiness(input: {\n        BusinessName : \&quot;Catering Online Shop - 2\&quot;,\n        BusinessEmail: \&quot;      \&quot;,\n        CountryCode: \&quot;IN\&quot;\n    })\n    {\n        BusinessID\n        BusinessCode\n        BusinessName\n        CountryCode\n        CountryTimeZoneID\n        BusinessStatus\n        CreatedOn\n        UpdatedOn\n        CreatedBy\n        UpdatedBy\n    }\n}&quot;}
+
+14:14:32.429 response time in milliseconds: 314
+1 &lt; 404
+1 &lt; Date: Sat, 26 Oct 2024 08:44:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 159
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Business Email!. - 4002 - Missing Business Email!. - 20201002&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.58">14:14:32.431 src/test/java/examples/MerchantCreate.feature:58
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 314, url: https://dvplatform.mzpv3001.mezzofy.com/v3/master, response: 
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Business Email!. - 4002 - Missing Business Email!. - 20201002&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+src/test/java/examples/MerchantCreate.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.5:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.5:67]</span>
+                <span class="scenario-name">Remove Email</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>278</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.31">14:14:32.351 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.32">14:14:32.356 [print] https://dvplatform.mzpv3001.mezzofy.com/v3/master 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="5.33">mutation {
+    CreateBusiness(input: {
+        BusinessName : &quot;Catering Online Shop   - 2&quot;,
+        BusinessEmail: &quot;&quot;,
+        CountryCode: &quot;IN&quot;
+    })
+    {
+        BusinessID
+        BusinessCode
+        BusinessName
+        CountryCode
+        CountryTimeZoneID
+        BusinessStatus
+        CreatedOn
+        UpdatedOn
+        CreatedBy
+        UpdatedBy
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">251</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.57">14:14:32.366 request:
+1 &gt; POST https://dvplatform.mzpv3001.mezzofy.com/v3/master
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 403
+1 &gt; Host: dvplatform.mzpv3001.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation {\n    CreateBusiness(input: {\n        BusinessName : \&quot;Catering Online Shop   - 2\&quot;,\n        BusinessEmail: \&quot;\&quot;,\n        CountryCode: \&quot;IN\&quot;\n    })\n    {\n        BusinessID\n        BusinessCode\n        BusinessName\n        CountryCode\n        CountryTimeZoneID\n        BusinessStatus\n        CreatedOn\n        UpdatedOn\n        CreatedBy\n        UpdatedBy\n    }\n}&quot;}
+
+14:14:32.611 response time in milliseconds: 244
+1 &lt; 404
+1 &lt; Date: Sat, 26 Oct 2024 08:44:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 159
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Business Email!. - 4002 - Missing Business Email!. - 20201002&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.58">14:14:32.632 src/test/java/examples/MerchantCreate.feature:58
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 244, url: https://dvplatform.mzpv3001.mezzofy.com/v3/master, response: 
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Business Email!. - 4002 - Missing Business Email!. - 20201002&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+src/test/java/examples/MerchantCreate.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.6:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.6:67]</span>
+                <span class="scenario-name">Empty address</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>283</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.31">14:14:32.415 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.32">14:14:32.438 [print] https://dvplatform.mzpv3001.mezzofy.com/v3/master 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="6.33">mutation {
+    CreateBusiness(input: {
+        BusinessName : &quot;&quot;,
+        BusinessEmail: &quot;alexhawkins.mt@outlook.com&quot;,
+        CountryCode: &quot;IN&quot;
+    })
+    {
+        BusinessID
+        BusinessCode
+        BusinessName
+        CountryCode
+        CountryTimeZoneID
+        BusinessStatus
+        CreatedOn
+        UpdatedOn
+        CreatedBy
+        UpdatedBy
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">251</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.57">14:14:32.455 request:
+1 &gt; POST https://dvplatform.mzpv3001.mezzofy.com/v3/master
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 403
+1 &gt; Host: dvplatform.mzpv3001.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation {\n    CreateBusiness(input: {\n        BusinessName : \&quot;\&quot;,\n        BusinessEmail: \&quot;alexhawkins.mt@outlook.com\&quot;,\n        CountryCode: \&quot;IN\&quot;\n    })\n    {\n        BusinessID\n        BusinessCode\n        BusinessName\n        CountryCode\n        CountryTimeZoneID\n        BusinessStatus\n        CreatedOn\n        UpdatedOn\n        CreatedBy\n        UpdatedBy\n    }\n}&quot;}
+
+14:14:32.699 response time in milliseconds: 243
+1 &lt; 404
+1 &lt; Date: Sat, 26 Oct 2024 08:44:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 157
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Business Name!. - 4001 - Missing Business Name!. - 20201001&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.58">14:14:32.701 src/test/java/examples/MerchantCreate.feature:58
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 243, url: https://dvplatform.mzpv3001.mezzofy.com/v3/master, response: 
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Business Name!. - 4001 - Missing Business Name!. - 20201001&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+src/test/java/examples/MerchantCreate.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.7:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.7:67]</span>
+                <span class="scenario-name">Blank space address</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>283</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.31">14:14:32.467 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.32">14:14:32.476 [print] https://dvplatform.mzpv3001.mezzofy.com/v3/master 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="7.33">mutation {
+    CreateBusiness(input: {
+        BusinessName : &quot;       &quot;,
+        BusinessEmail: &quot;alexhawkins.mt@outlook.com&quot;,
+        CountryCode: &quot;IN&quot;
+    })
+    {
+        BusinessID
+        BusinessCode
+        BusinessName
+        CountryCode
+        CountryTimeZoneID
+        BusinessStatus
+        CreatedOn
+        UpdatedOn
+        CreatedBy
+        UpdatedBy
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">280</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.57">14:14:32.484 request:
+1 &gt; POST https://dvplatform.mzpv3001.mezzofy.com/v3/master
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 410
+1 &gt; Host: dvplatform.mzpv3001.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation {\n    CreateBusiness(input: {\n        BusinessName : \&quot;       \&quot;,\n        BusinessEmail: \&quot;alexhawkins.mt@outlook.com\&quot;,\n        CountryCode: \&quot;IN\&quot;\n    })\n    {\n        BusinessID\n        BusinessCode\n        BusinessName\n        CountryCode\n        CountryTimeZoneID\n        BusinessStatus\n        CreatedOn\n        UpdatedOn\n        CreatedBy\n        UpdatedBy\n    }\n}&quot;}
+
+14:14:32.756 response time in milliseconds: 272
+1 &lt; 404
+1 &lt; Date: Sat, 26 Oct 2024 08:44:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 157
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Business Name!. - 4001 - Missing Business Name!. - 20201001&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.58">14:14:32.758 src/test/java/examples/MerchantCreate.feature:58
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 272, url: https://dvplatform.mzpv3001.mezzofy.com/v3/master, response: 
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Business Name!. - 4001 - Missing Business Name!. - 20201001&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+src/test/java/examples/MerchantCreate.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.8:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.8:67]</span>
+                <span class="scenario-name">Remove Address</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>250</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="8.31">14:14:32.447 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="8.32">14:14:32.457 [print] https://dvplatform.mzpv3001.mezzofy.com/v3/master 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="8.33">mutation {
+    CreateBusiness(input: {
+        BusinessName : &quot;&quot;,
+        BusinessEmail: &quot;alexhawkins.mt@outlook.com&quot;,
+        CountryCode: &quot;IN&quot;
+    })
+    {
+        BusinessID
+        BusinessCode
+        BusinessName
+        CountryCode
+        CountryTimeZoneID
+        BusinessStatus
+        CreatedOn
+        UpdatedOn
+        CreatedBy
+        UpdatedBy
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">237</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="8.57">14:14:32.470 request:
+1 &gt; POST https://dvplatform.mzpv3001.mezzofy.com/v3/master
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 403
+1 &gt; Host: dvplatform.mzpv3001.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation {\n    CreateBusiness(input: {\n        BusinessName : \&quot;\&quot;,\n        BusinessEmail: \&quot;alexhawkins.mt@outlook.com\&quot;,\n        CountryCode: \&quot;IN\&quot;\n    })\n    {\n        BusinessID\n        BusinessCode\n        BusinessName\n        CountryCode\n        CountryTimeZoneID\n        BusinessStatus\n        CreatedOn\n        UpdatedOn\n        CreatedBy\n        UpdatedBy\n    }\n}&quot;}
+
+14:14:32.704 response time in milliseconds: 233
+1 &lt; 404
+1 &lt; Date: Sat, 26 Oct 2024 08:44:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 157
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Business Name!. - 4001 - Missing Business Name!. - 20201001&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="8.58">14:14:32.706 src/test/java/examples/MerchantCreate.feature:58
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 233, url: https://dvplatform.mzpv3001.mezzofy.com/v3/master, response: 
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Business Name!. - 4001 - Missing Business Name!. - 20201001&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+src/test/java/examples/MerchantCreate.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.9:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.9:67]</span>
+                <span class="scenario-name">Invalid Country Code </span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>293</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="9.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="9.31">14:14:32.463 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="9.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">27</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="9.32">14:14:32.484 [print] https://dvplatform.mzpv3001.mezzofy.com/v3/master 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="9.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="9.33">mutation {
+    CreateBusiness(input: {
+        BusinessName : &quot;Catering Online Shop   - 2&quot;,
+        BusinessEmail: &quot;alexhawkins.mt@outlook.com&quot;,
+        CountryCode: &quot;KPPP&quot;
+    })
+    {
+        BusinessID
+        BusinessCode
+        BusinessName
+        CountryCode
+        CountryTimeZoneID
+        BusinessStatus
+        CreatedOn
+        UpdatedOn
+        CreatedBy
+        UpdatedBy
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="9.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="9.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">262</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="9.57">14:14:32.497 request:
+1 &gt; POST https://dvplatform.mzpv3001.mezzofy.com/v3/master
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 431
+1 &gt; Host: dvplatform.mzpv3001.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation {\n    CreateBusiness(input: {\n        BusinessName : \&quot;Catering Online Shop   - 2\&quot;,\n        BusinessEmail: \&quot;alexhawkins.mt@outlook.com\&quot;,\n        CountryCode: \&quot;KPPP\&quot;\n    })\n    {\n        BusinessID\n        BusinessCode\n        BusinessName\n        CountryCode\n        CountryTimeZoneID\n        BusinessStatus\n        CreatedOn\n        UpdatedOn\n        CreatedBy\n        UpdatedBy\n    }\n}&quot;}
+
+14:14:32.756 response time in milliseconds: 258
+1 &lt; 411
+1 &lt; Date: Sat, 26 Oct 2024 08:44:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 195
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;411 - Country Code supports maximum of 2 chars!. - 4004 - Country Code supports maximum of 2 chars!. - 20201004&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="9.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="9.58">14:14:32.761 src/test/java/examples/MerchantCreate.feature:58
+Then status 200
+status code was: 411, expected: 200, response time in milliseconds: 258, url: https://dvplatform.mzpv3001.mezzofy.com/v3/master, response: 
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;411 - Country Code supports maximum of 2 chars!. - 4004 - Country Code supports maximum of 2 chars!. - 20201004&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+src/test/java/examples/MerchantCreate.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="9.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.10:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.10:67]</span>
+                <span class="scenario-name">Empty Country Code</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>255</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="10.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="10.31">14:14:32.655 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="10.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="10.32">14:14:32.666 [print] https://dvplatform.mzpv3001.mezzofy.com/v3/master 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="10.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="10.33">mutation {
+    CreateBusiness(input: {
+        BusinessName : &quot;Catering Online Shop   - 2&quot;,
+        BusinessEmail: &quot;alexhawkins.mt@outlook.com&quot;,
+        CountryCode: &quot;&quot;
+    })
+    {
+        BusinessID
+        BusinessCode
+        BusinessName
+        CountryCode
+        CountryTimeZoneID
+        BusinessStatus
+        CreatedOn
+        UpdatedOn
+        CreatedBy
+        UpdatedBy
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="10.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="10.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">246</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="10.57">14:14:32.668 request:
+1 &gt; POST https://dvplatform.mzpv3001.mezzofy.com/v3/master
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 427
+1 &gt; Host: dvplatform.mzpv3001.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation {\n    CreateBusiness(input: {\n        BusinessName : \&quot;Catering Online Shop   - 2\&quot;,\n        BusinessEmail: \&quot;alexhawkins.mt@outlook.com\&quot;,\n        CountryCode: \&quot;\&quot;\n    })\n    {\n        BusinessID\n        BusinessCode\n        BusinessName\n        CountryCode\n        CountryTimeZoneID\n        BusinessStatus\n        CreatedOn\n        UpdatedOn\n        CreatedBy\n        UpdatedBy\n    }\n}&quot;}
+
+14:14:32.911 response time in milliseconds: 242
+1 &lt; 404
+1 &lt; Date: Sat, 26 Oct 2024 08:44:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 155
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Country Code!. - 4003 - Missing Country Code!. - 20201003&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="10.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="10.58">14:14:32.913 src/test/java/examples/MerchantCreate.feature:58
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 242, url: https://dvplatform.mzpv3001.mezzofy.com/v3/master, response: 
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Country Code!. - 4003 - Missing Country Code!. - 20201003&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+src/test/java/examples/MerchantCreate.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="10.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.11:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.11:67]</span>
+                <span class="scenario-name">Blank Space Country Code </span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>279</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="11.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="11.31">14:14:32.722 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="11.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print Merchant_Signup_API</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="11.32">14:14:32.728 [print] https://dvplatform.mzpv3001.mezzofy.com/v3/master 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="11.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="11.33">mutation {
+    CreateBusiness(input: {
+        BusinessName : &quot;Catering Online Shop    -2&quot;,
+        BusinessEmail: &quot;alexhawkins.mt@outlook.com&quot;,
+        CountryCode: &quot;      &quot;
+    })
+    {
+        BusinessID
+        BusinessCode
+        BusinessName
+        CountryCode
+        CountryTimeZoneID
+        BusinessStatus
+        CreatedOn
+        UpdatedOn
+        CreatedBy
+        UpdatedBy
+    }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="11.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { query: &#39;#(query)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="11.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">274</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="11.57">14:14:32.735 request:
+1 &gt; POST https://dvplatform.mzpv3001.mezzofy.com/v3/master
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 433
+1 &gt; Host: dvplatform.mzpv3001.mezzofy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;mutation {\n    CreateBusiness(input: {\n        BusinessName : \&quot;Catering Online Shop    -2\&quot;,\n        BusinessEmail: \&quot;alexhawkins.mt@outlook.com\&quot;,\n        CountryCode: \&quot;      \&quot;\n    })\n    {\n        BusinessID\n        BusinessCode\n        BusinessName\n        CountryCode\n        CountryTimeZoneID\n        BusinessStatus\n        CreatedOn\n        UpdatedOn\n        CreatedBy\n        UpdatedBy\n    }\n}&quot;}
+
+14:14:33.003 response time in milliseconds: 267
+1 &lt; 404
+1 &lt; Date: Sat, 26 Oct 2024 08:44:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 155
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Country Code!. - 4003 - Missing Country Code!. - 20201003&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="11.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="11.58">14:14:33.004 src/test/java/examples/MerchantCreate.feature:58
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 267, url: https://dvplatform.mzpv3001.mezzofy.com/v3/master, response: 
+{&quot;errors&quot;:[{&quot;message&quot;:&quot;404 - Missing Country Code!. - 4003 - Missing Country Code!. - 20201003&quot;,&quot;path&quot;:[&quot;CreateBusiness&quot;]}],&quot;data&quot;:{&quot;CreateBusiness&quot;:null}}
+src/test/java/examples/MerchantCreate.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="11.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

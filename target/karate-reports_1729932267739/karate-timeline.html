@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/ExistingEmail[1.1:56]","start":1729927232859,"end":1729927234289,"title":"src\/test\/java\/examples\/ExistingEmail[1.1:56] 12:50:32.859-12:50:34.289 1 New user Email"},{"id":2,"group":2,"content":"src\/test\/java\/examples\/ExistingEmail[1.2:56]","start":1729927232892,"end":1729927234299,"title":"src\/test\/java\/examples\/ExistingEmail[1.2:56] 12:50:32.892-12:50:34.299 2  Existing  Email"},{"id":3,"group":3,"content":"src\/test\/java\/examples\/ExistingEmail[1.3:56]","start":1729927232874,"end":1729927234284,"title":"src\/test\/java\/examples\/ExistingEmail[1.3:56] 12:50:32.874-12:50:34.284 3 Blank Space"},{"id":4,"group":4,"content":"src\/test\/java\/examples\/ExistingEmail[1.4:56]","start":1729927232893,"end":1729927234331,"title":"src\/test\/java\/examples\/ExistingEmail[1.4:56] 12:50:32.893-12:50:34.331 4 Invalid Email"},{"id":5,"group":5,"content":"src\/test\/java\/examples\/ExistingEmail[1.5:56]","start":1729927232934,"end":1729927234288,"title":"src\/test\/java\/examples\/ExistingEmail[1.5:56] 12:50:32.934-12:50:34.288 5 Empty"},{"id":6,"group":3,"content":"src\/test\/java\/examples\/ExistingEmail[1.6:56]","start":1729927234306,"end":1729927234636,"title":"src\/test\/java\/examples\/ExistingEmail[1.6:56] 12:50:34.306-12:50:34.636 6 inactive status"},{"id":7,"group":5,"content":"src\/test\/java\/examples\/ExistingEmail[1.7:56]","start":1729927234321,"end":1729927234653,"title":"src\/test\/java\/examples\/ExistingEmail[1.7:56] 12:50:34.321-12:50:34.653 7 Deleted Email"},{"id":8,"group":4,"content":"src\/test\/java\/examples\/MerchantCreate[1.1:67]","start":1729927234649,"end":1729927234941,"title":"src\/test\/java\/examples\/MerchantCreate[1.1:67] 12:50:34.649-12:50:34.941 Existing","className":"failed"},{"id":9,"group":5,"content":"src\/test\/java\/examples\/MerchantCreate[1.2:67]","start":1729927234664,"end":1729927234970,"title":"src\/test\/java\/examples\/MerchantCreate[1.2:67] 12:50:34.664-12:50:34.970 invalid Email","className":"failed"},{"id":10,"group":2,"content":"src\/test\/java\/examples\/MerchantCreate[1.3:67]","start":1729927234721,"end":1729927235017,"title":"src\/test\/java\/examples\/MerchantCreate[1.3:67] 12:50:34.721-12:50:35.017 Empty Email","className":"failed"},{"id":11,"group":1,"content":"src\/test\/java\/examples\/MerchantCreate[1.4:67]","start":1729927234724,"end":1729927235018,"title":"src\/test\/java\/examples\/MerchantCreate[1.4:67] 12:50:34.724-12:50:35.018 Blank Space","className":"failed"},{"id":12,"group":3,"content":"src\/test\/java\/examples\/MerchantCreate[1.5:67]","start":1729927234943,"end":1729927235241,"title":"src\/test\/java\/examples\/MerchantCreate[1.5:67] 12:50:34.943-12:50:35.241 Remove Email","className":"failed"},{"id":13,"group":4,"content":"src\/test\/java\/examples\/MerchantCreate[1.6:67]","start":1729927234952,"end":1729927235288,"title":"src\/test\/java\/examples\/MerchantCreate[1.6:67] 12:50:34.952-12:50:35.288 Empty address","className":"failed"},{"id":14,"group":5,"content":"src\/test\/java\/examples\/MerchantCreate[1.7:67]","start":1729927234976,"end":1729927235281,"title":"src\/test\/java\/examples\/MerchantCreate[1.7:67] 12:50:34.976-12:50:35.281 Blank space address","className":"failed"},{"id":15,"group":2,"content":"src\/test\/java\/examples\/MerchantCreate[1.8:67]","start":1729927235036,"end":1729927235368,"title":"src\/test\/java\/examples\/MerchantCreate[1.8:67] 12:50:35.036-12:50:35.368 Remove Address","className":"failed"},{"id":16,"group":1,"content":"src\/test\/java\/examples\/MerchantCreate[1.9:67]","start":1729927235036,"end":1729927235371,"title":"src\/test\/java\/examples\/MerchantCreate[1.9:67] 12:50:35.036-12:50:35.371 Invalid Country Code","className":"failed"},{"id":17,"group":3,"content":"src\/test\/java\/examples\/MerchantCreate[1.10:67]","start":1729927235251,"end":1729927235530,"title":"src\/test\/java\/examples\/MerchantCreate[1.10:67] 12:50:35.251-12:50:35.530 Empty Country Code","className":"failed"},{"id":18,"group":5,"content":"src\/test\/java\/examples\/MerchantCreate[1.11:67]","start":1729927235292,"end":1729927235568,"title":"src\/test\/java\/examples\/MerchantCreate[1.11:67] 12:50:35.292-12:50:35.568 Blank Space Country Code","className":"failed"},{"id":19,"group":1,"content":"src\/test\/java\/examples\/NegativeScenario[1:27]","start":1729927234303,"end":1729927234683,"title":"src\/test\/java\/examples\/NegativeScenario[1:27] 12:50:34.303-12:50:34.683 invalid method","className":"failed"},{"id":20,"group":2,"content":"src\/test\/java\/examples\/NegativeScenario[2:50]","start":1729927234323,"end":1729927234685,"title":"src\/test\/java\/examples\/NegativeScenario[2:50] 12:50:34.323-12:50:34.685 invalid url","className":"failed"},{"id":21,"group":4,"content":"src\/test\/java\/examples\/NegativeScenario[3:74]","start":1729927234345,"end":1729927234640,"title":"src\/test\/java\/examples\/NegativeScenario[3:74] 12:50:34.345-12:50:34.640 invalid Token"},{"id":22,"group":3,"content":"src\/test\/java\/examples\/NegativeScenario[4:97]","start":1729927234642,"end":1729927234931,"title":"src\/test\/java\/examples\/NegativeScenario[4:97] 12:50:34.642-12:50:34.931 Remove Body data","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/ExistingEmail[1:26]","start":1729915966010,"end":1729915974978,"title":"src\/test\/java\/examples\/ExistingEmail[1:26] 09:42:46.010-09:42:54.978 Remove Email Fields","className":"failed"},{"id":2,"group":2,"content":"src\/test\/java\/examples\/ExistingEmail[2.1:77]","start":1729915968374,"end":1729915974914,"title":"src\/test\/java\/examples\/ExistingEmail[2.1:77] 09:42:48.374-09:42:54.914 Existing"},{"id":3,"group":3,"content":"src\/test\/java\/examples\/ExistingEmail[2.2:77]","start":1729915968363,"end":1729915974989,"title":"src\/test\/java\/examples\/ExistingEmail[2.2:77] 09:42:48.363-09:42:54.989","className":"failed"},{"id":4,"group":4,"content":"src\/test\/java\/examples\/ExistingEmail[2.3:77]","start":1729915968474,"end":1729915974937,"title":"src\/test\/java\/examples\/ExistingEmail[2.3:77] 09:42:48.474-09:42:54.937 Invalid Email"},{"id":5,"group":5,"content":"src\/test\/java\/examples\/ExistingEmail[2.4:77]","start":1729915968885,"end":1729915974914,"title":"src\/test\/java\/examples\/ExistingEmail[2.4:77] 09:42:48.885-09:42:54.914 New user Email"},{"id":6,"group":2,"content":"src\/test\/java\/examples\/MerchantCreate[1.1:67]","start":1729915974966,"end":1729915975555,"title":"src\/test\/java\/examples\/MerchantCreate[1.1:67] 09:42:54.966-09:42:55.555 Existing","className":"failed"},{"id":7,"group":5,"content":"src\/test\/java\/examples\/MerchantCreate[1.2:67]","start":1729915974969,"end":1729915975528,"title":"src\/test\/java\/examples\/MerchantCreate[1.2:67] 09:42:54.969-09:42:55.528","className":"failed"},{"id":8,"group":4,"content":"src\/test\/java\/examples\/MerchantCreate[1.3:67]","start":1729915974967,"end":1729915975555,"title":"src\/test\/java\/examples\/MerchantCreate[1.3:67] 09:42:54.967-09:42:55.555 Invalid Email","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

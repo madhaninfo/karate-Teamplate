@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.1:47]","start":1728305147890,"end":1728305151985,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.1:47] 18:15:47.890-18:15:51.985 positive"},{"id":2,"group":2,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.2:47]","start":1728305148041,"end":1728305149691,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.2:47] 18:15:48.041-18:15:49.691 2 Invalid Method","className":"failed"},{"id":3,"group":3,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.3:47]","start":1728305147990,"end":1728305151855,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.3:47] 18:15:47.990-18:15:51.855 3 Invalid Basic Auth"},{"id":4,"group":4,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.4:47]","start":1728305147956,"end":1728305149689,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.4:47] 18:15:47.956-18:15:49.689 4  Body data Empty","className":"failed"},{"id":5,"group":5,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.5:47]","start":1728305147994,"end":1728305149689,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.5:47] 18:15:47.994-18:15:49.689 5 Invalid QR Code","className":"failed"},{"id":6,"group":4,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.6:47]","start":1728305149739,"end":1728305150054,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.6:47] 18:15:49.739-18:15:50.054 6 inactive QR Code","className":"failed"},{"id":7,"group":5,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.7:47]","start":1728305149747,"end":1728305150053,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.7:47] 18:15:49.747-18:15:50.053 7 Remove Qr Code Value","className":"failed"},{"id":8,"group":2,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.8:47]","start":1728305149767,"end":1728305150068,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.8:47] 18:15:49.767-18:15:50.068 8  Qr Code Is Empty","className":"failed"},{"id":9,"group":5,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.9:47]","start":1728305150067,"end":1728305150297,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.9:47] 18:15:50.067-18:15:50.297 9 Remove Delivery Method Value","className":"failed"},{"id":10,"group":4,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.10:47]","start":1728305150094,"end":1728305152372,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.10:47] 18:15:50.094-18:15:52.372 10  Delivery Method is Empty"},{"id":11,"group":2,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.11:47]","start":1728305150127,"end":1728305150437,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.11:47] 18:15:50.127-18:15:50.437 11 Remove Customer Email Value","className":"failed"},{"id":12,"group":5,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.12:47]","start":1728305150345,"end":1728305150651,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.12:47] 18:15:50.345-18:15:50.651 11 Remove Customer Email Empty","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

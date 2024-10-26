@@ -1,0 +1,8 @@
+BusinessID,status,title,
+RO8BQ876,200,valid Data,
+,404,Empty Business ID,
+"      ",404,Blank Space Business ID,
+RO8BQ8767,404,Maximum 8 Characters,
+RHJG8765,404,Invalid Business ID,
+47DY1DKD,404,inactive Business ID,
+Z15621AP,404,"Deleted Business ID ",

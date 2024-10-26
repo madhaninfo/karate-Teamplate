@@ -1,0 +1,8 @@
+id,title,status
+jordanbooth.mt@outlook.com,"1 New user Email ",200
+corypaul.mt@outlook.com,2  Existing  Email,200
+"       ",3 Blank Space,404
+alexhawkins.mt@@outloook.com,4 Invalid Email,404
+,5 Empty,404
+dannylewis.mt@outlook.com,6 inactive status,200
+madhan.mt@outlook.com,"7 Deleted Email ",200

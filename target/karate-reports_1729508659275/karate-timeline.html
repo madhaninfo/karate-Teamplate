@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/MerchantSignup[1:26]","start":1729505037301,"end":1729505039521,"title":"src\/test\/java\/examples\/MerchantSignup[1:26] 15:33:57.301-15:33:59.521 Remove Email Fields","className":"failed"},{"id":2,"group":2,"content":"src\/test\/java\/examples\/MerchantSignup[2.1:77]","start":1729505037656,"end":1729505039504,"title":"src\/test\/java\/examples\/MerchantSignup[2.1:77] 15:33:57.656-15:33:59.504 Existing"},{"id":3,"group":3,"content":"src\/test\/java\/examples\/MerchantSignup[2.2:77]","start":1729505037691,"end":1729505039524,"title":"src\/test\/java\/examples\/MerchantSignup[2.2:77] 15:33:57.691-15:33:59.524","className":"failed"},{"id":4,"group":4,"content":"src\/test\/java\/examples\/MerchantSignup[2.3:77]","start":1729505037713,"end":1729505039531,"title":"src\/test\/java\/examples\/MerchantSignup[2.3:77] 15:33:57.713-15:33:59.531 Invalid Email"},{"id":5,"group":5,"content":"src\/test\/java\/examples\/MerchantSignup[2.4:77]","start":1729505037700,"end":1729505039527,"title":"src\/test\/java\/examples\/MerchantSignup[2.4:77] 15:33:57.700-15:33:59.527 New user Email"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

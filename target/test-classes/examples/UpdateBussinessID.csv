@@ -1,0 +1,14 @@
+BusinessID,BusinessStatus,title,status
+HA1V3MRR,C,Valid data,200
+RO8BQ876,C,Active to create status,404
+,A,Empty Business ID,404
+"      ",A,Blank Space Business ID,404
+RO8BQ8767,A,Maximum 8 Characters,404
+RHJG8765,I,Invalid Business ID,404
+47DY1DKD,A,inactive Business ID,404
+Z15621AP,A,"Deleted Business ID ",404
+Z15621AP,AA,"Length check  status ",411
+RO8BQ876,,Empty status,404
+RO8BQ876,"     ","blank space status ",404
+D8INLKQT,A,Local Email,554
+4WI3T4CL,A,invalid Status,404

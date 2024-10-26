@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.1:47]","start":1728300419717,"end":1728300421128,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.1:47] 16:56:59.717-16:57:01.128 positive","className":"failed"},{"id":2,"group":2,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.2:47]","start":1728300419687,"end":1728300421127,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.2:47] 16:56:59.687-16:57:01.127 2 Invalid Method","className":"failed"},{"id":3,"group":3,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.3:47]","start":1728300419719,"end":1728300421134,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.3:47] 16:56:59.719-16:57:01.134 3 Invalid Basic Auth","className":"failed"},{"id":4,"group":4,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.4:47]","start":1728300419792,"end":1728300421170,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.4:47] 16:56:59.792-16:57:01.170 4  Body data Empty","className":"failed"},{"id":5,"group":5,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.5:47]","start":1728300419773,"end":1728300421124,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.5:47] 16:56:59.773-16:57:01.124 5 Invalid QR Code","className":"failed"},{"id":6,"group":3,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.6:47]","start":1728300421162,"end":1728300421539,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.6:47] 16:57:01.162-16:57:01.539 6 inactive QR Code","className":"failed"},{"id":7,"group":2,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.7:47]","start":1728300421156,"end":1728300421447,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.7:47] 16:57:01.156-16:57:01.447 7 Remove Qr Code Value","className":"failed"},{"id":8,"group":1,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.8:47]","start":1728300421162,"end":1728300421456,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.8:47] 16:57:01.162-16:57:01.456 8  Qr Code Is Empty","className":"failed"},{"id":9,"group":5,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.9:47]","start":1728300421186,"end":1728300421494,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.9:47] 16:57:01.186-16:57:01.494 9 Remove Delivery Method Value","className":"failed"},{"id":10,"group":4,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.10:47]","start":1728300421196,"end":1728300421470,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.10:47] 16:57:01.196-16:57:01.470 10 Remove Delivery Method is Empty","className":"failed"},{"id":11,"group":2,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.11:47]","start":1728300421487,"end":1728300421741,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.11:47] 16:57:01.487-16:57:01.741 11 Remove Customer Email Value","className":"failed"},{"id":12,"group":1,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.12:47]","start":1728300421480,"end":1728300421825,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.12:47] 16:57:01.480-16:57:01.825 11 Remove Customer Email Empty","className":"failed"},{"id":13,"group":4,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.13:47]","start":1728300421479,"end":1728300421814,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.13:47] 16:57:01.479-16:57:01.814 11 Remove Blank Space Email Empty","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

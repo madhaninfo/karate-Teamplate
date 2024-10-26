@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/updateBusiness[1.1:68]","start":1729938098983,"end":1729938100752,"title":"src\/test\/java\/examples\/updateBusiness[1.1:68] 15:51:38.983-15:51:40.752 Valid data"},{"id":2,"group":2,"content":"src\/test\/java\/examples\/updateBusiness[1.2:68]","start":1729938098989,"end":1729938100636,"title":"src\/test\/java\/examples\/updateBusiness[1.2:68] 15:51:38.989-15:51:40.636 Active to create status"},{"id":3,"group":3,"content":"src\/test\/java\/examples\/updateBusiness[1.3:68]","start":1729938098963,"end":1729938100636,"title":"src\/test\/java\/examples\/updateBusiness[1.3:68] 15:51:38.963-15:51:40.636 Empty Business ID"},{"id":4,"group":4,"content":"src\/test\/java\/examples\/updateBusiness[1.4:68]","start":1729938098963,"end":1729938100629,"title":"src\/test\/java\/examples\/updateBusiness[1.4:68] 15:51:38.963-15:51:40.629 Blank Space Business ID"},{"id":5,"group":5,"content":"src\/test\/java\/examples\/updateBusiness[1.5:68]","start":1729938099016,"end":1729938100643,"title":"src\/test\/java\/examples\/updateBusiness[1.5:68] 15:51:39.016-15:51:40.643 Maximum 8 Characters"},{"id":6,"group":4,"content":"src\/test\/java\/examples\/updateBusiness[1.6:68]","start":1729938100668,"end":1729938101172,"title":"src\/test\/java\/examples\/updateBusiness[1.6:68] 15:51:40.668-15:51:41.172 Invalid Business ID"},{"id":7,"group":2,"content":"src\/test\/java\/examples\/updateBusiness[1.7:68]","start":1729938100675,"end":1729938102038,"title":"src\/test\/java\/examples\/updateBusiness[1.7:68] 15:51:40.675-15:51:42.038 inactive Business ID"},{"id":8,"group":3,"content":"src\/test\/java\/examples\/updateBusiness[1.8:68]","start":1729938100677,"end":1729938101155,"title":"src\/test\/java\/examples\/updateBusiness[1.8:68] 15:51:40.677-15:51:41.155 Deleted Business ID"},{"id":9,"group":5,"content":"src\/test\/java\/examples\/updateBusiness[1.9:68]","start":1729938100697,"end":1729938101233,"title":"src\/test\/java\/examples\/updateBusiness[1.9:68] 15:51:40.697-15:51:41.233 Length check  status"},{"id":10,"group":1,"content":"src\/test\/java\/examples\/updateBusiness[1.10:68]","start":1729938100768,"end":1729938101260,"title":"src\/test\/java\/examples\/updateBusiness[1.10:68] 15:51:40.768-15:51:41.260 Empty status"},{"id":11,"group":3,"content":"src\/test\/java\/examples\/updateBusiness[1.11:68]","start":1729938101177,"end":1729938101464,"title":"src\/test\/java\/examples\/updateBusiness[1.11:68] 15:51:41.177-15:51:41.464 blank space status"},{"id":12,"group":4,"content":"src\/test\/java\/examples\/updateBusiness[1.12:68]","start":1729938101209,"end":1729938101690,"title":"src\/test\/java\/examples\/updateBusiness[1.12:68] 15:51:41.209-15:51:41.690 Local Email","className":"failed"},{"id":13,"group":5,"content":"src\/test\/java\/examples\/updateBusiness[1.13:68]","start":1729938101264,"end":1729938101613,"title":"src\/test\/java\/examples\/updateBusiness[1.13:68] 15:51:41.264-15:51:41.613 invalid Status"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

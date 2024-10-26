@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.1:47]","start":1728301580652,"end":1728301582058,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.1:47] 17:16:20.652-17:16:22.058 positive","className":"failed"},{"id":2,"group":2,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.2:47]","start":1728301580698,"end":1728301582073,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.2:47] 17:16:20.698-17:16:22.073 2 Invalid Method","className":"failed"},{"id":3,"group":3,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.3:47]","start":1728301580691,"end":1728301582074,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.3:47] 17:16:20.691-17:16:22.074 3 Invalid Basic Auth","className":"failed"},{"id":4,"group":4,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.4:47]","start":1728301580751,"end":1728301582060,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.4:47] 17:16:20.751-17:16:22.060 4  Body data Empty","className":"failed"},{"id":5,"group":5,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.5:47]","start":1728301580739,"end":1728301582057,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.5:47] 17:16:20.739-17:16:22.057 5 Invalid QR Code","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.6:47]","start":1728301582084,"end":1728301582491,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.6:47] 17:16:22.084-17:16:22.491 6 inactive QR Code","className":"failed"},{"id":7,"group":4,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.7:47]","start":1728301582105,"end":1728301582490,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.7:47] 17:16:22.105-17:16:22.490 7 Remove Qr Code Value","className":"failed"},{"id":8,"group":5,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.8:47]","start":1728301582125,"end":1728301582498,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.8:47] 17:16:22.125-17:16:22.498 8  Qr Code Is Empty","className":"failed"},{"id":9,"group":2,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.9:47]","start":1728301582124,"end":1728301582487,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.9:47] 17:16:22.124-17:16:22.487 9 Remove Delivery Method Value","className":"failed"},{"id":10,"group":3,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.10:47]","start":1728301582102,"end":1728301582501,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.10:47] 17:16:22.102-17:16:22.501 10  Delivery Method is Empty","className":"failed"},{"id":11,"group":2,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.11:47]","start":1728301582530,"end":1728301582808,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.11:47] 17:16:22.530-17:16:22.808 11 Remove Customer Email Value","className":"failed"},{"id":12,"group":4,"content":"src\/test\/java\/examples\/NFcPurchaseAPI[1.12:47]","start":1728301582508,"end":1728301582790,"title":"src\/test\/java\/examples\/NFcPurchaseAPI[1.12:47] 17:16:22.508-17:16:22.790 11 Remove Customer Email Empty","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/ExistingEmail[1.1:56]","start":1729926681832,"end":1729926683350,"title":"src\/test\/java\/examples\/ExistingEmail[1.1:56] 12:41:21.832-12:41:23.350 1 New user Email"},{"id":2,"group":2,"content":"src\/test\/java\/examples\/ExistingEmail[1.2:56]","start":1729926681807,"end":1729926683331,"title":"src\/test\/java\/examples\/ExistingEmail[1.2:56] 12:41:21.807-12:41:23.331 2  Existing  Email"},{"id":3,"group":3,"content":"src\/test\/java\/examples\/ExistingEmail[1.3:56]","start":1729926681804,"end":1729926683339,"title":"src\/test\/java\/examples\/ExistingEmail[1.3:56] 12:41:21.804-12:41:23.339 3 Blank Space"},{"id":4,"group":4,"content":"src\/test\/java\/examples\/ExistingEmail[1.4:56]","start":1729926681814,"end":1729926683317,"title":"src\/test\/java\/examples\/ExistingEmail[1.4:56] 12:41:21.814-12:41:23.317 4 Invalid Email"},{"id":5,"group":5,"content":"src\/test\/java\/examples\/ExistingEmail[1.5:56]","start":1729926681849,"end":1729926683352,"title":"src\/test\/java\/examples\/ExistingEmail[1.5:56] 12:41:21.849-12:41:23.352 5 Empty"},{"id":6,"group":4,"content":"src\/test\/java\/examples\/ExistingEmail[1.6:56]","start":1729926683337,"end":1729926683687,"title":"src\/test\/java\/examples\/ExistingEmail[1.6:56] 12:41:23.337-12:41:23.687 6 inactive status"},{"id":7,"group":2,"content":"src\/test\/java\/examples\/ExistingEmail[1.7:56]","start":1729926683379,"end":1729926683732,"title":"src\/test\/java\/examples\/ExistingEmail[1.7:56] 12:41:23.379-12:41:23.732 7 Deleted Email"},{"id":8,"group":1,"content":"src\/test\/java\/examples\/MerchantCreate[1.1:67]","start":1729926683753,"end":1729926684470,"title":"src\/test\/java\/examples\/MerchantCreate[1.1:67] 12:41:23.753-12:41:24.470 Existing"},{"id":9,"group":3,"content":"src\/test\/java\/examples\/MerchantCreate[1.2:67]","start":1729926683762,"end":1729926684061,"title":"src\/test\/java\/examples\/MerchantCreate[1.2:67] 12:41:23.762-12:41:24.061 invalid Email","className":"failed"},{"id":10,"group":2,"content":"src\/test\/java\/examples\/MerchantCreate[1.3:67]","start":1729926683745,"end":1729926684054,"title":"src\/test\/java\/examples\/MerchantCreate[1.3:67] 12:41:23.745-12:41:24.054 Empty Email","className":"failed"},{"id":11,"group":5,"content":"src\/test\/java\/examples\/MerchantCreate[1.4:67]","start":1729926683750,"end":1729926684058,"title":"src\/test\/java\/examples\/MerchantCreate[1.4:67] 12:41:23.750-12:41:24.058 Blank Space","className":"failed"},{"id":12,"group":4,"content":"src\/test\/java\/examples\/MerchantCreate[1.5:67]","start":1729926684084,"end":1729926684411,"title":"src\/test\/java\/examples\/MerchantCreate[1.5:67] 12:41:24.084-12:41:24.411 Remove Email","className":"failed"},{"id":13,"group":2,"content":"src\/test\/java\/examples\/MerchantCreate[1.6:67]","start":1729926684098,"end":1729926684447,"title":"src\/test\/java\/examples\/MerchantCreate[1.6:67] 12:41:24.098-12:41:24.447 Empty address","className":"failed"},{"id":14,"group":5,"content":"src\/test\/java\/examples\/MerchantCreate[1.7:67]","start":1729926684069,"end":1729926684370,"title":"src\/test\/java\/examples\/MerchantCreate[1.7:67] 12:41:24.069-12:41:24.370 Blank space address","className":"failed"},{"id":15,"group":3,"content":"src\/test\/java\/examples\/MerchantCreate[1.8:67]","start":1729926684072,"end":1729926684461,"title":"src\/test\/java\/examples\/MerchantCreate[1.8:67] 12:41:24.072-12:41:24.461 Remove Address","className":"failed"},{"id":16,"group":5,"content":"src\/test\/java\/examples\/MerchantCreate[1.9:67]","start":1729926684398,"end":1729926685008,"title":"src\/test\/java\/examples\/MerchantCreate[1.9:67] 12:41:24.398-12:41:25.008 Invalid Country Code"},{"id":17,"group":4,"content":"src\/test\/java\/examples\/MerchantCreate[1.10:67]","start":1729926684433,"end":1729926685009,"title":"src\/test\/java\/examples\/MerchantCreate[1.10:67] 12:41:24.433-12:41:25.009 Empty Country Code"},{"id":18,"group":2,"content":"src\/test\/java\/examples\/MerchantCreate[1.11:67]","start":1729926684467,"end":1729926685018,"title":"src\/test\/java\/examples\/MerchantCreate[1.11:67] 12:41:24.467-12:41:25.018 Blank Space Country Code"},{"id":19,"group":3,"content":"src\/test\/java\/examples\/NegativeScenario[1:27]","start":1729926683358,"end":1729926683711,"title":"src\/test\/java\/examples\/NegativeScenario[1:27] 12:41:23.358-12:41:23.711 invalid method","className":"failed"},{"id":20,"group":1,"content":"src\/test\/java\/examples\/NegativeScenario[2:50]","start":1729926683393,"end":1729926683716,"title":"src\/test\/java\/examples\/NegativeScenario[2:50] 12:41:23.393-12:41:23.716 invalid url","className":"failed"},{"id":21,"group":5,"content":"src\/test\/java\/examples\/NegativeScenario[3:74]","start":1729926683361,"end":1729926683738,"title":"src\/test\/java\/examples\/NegativeScenario[3:74] 12:41:23.361-12:41:23.738 invalid Token"},{"id":22,"group":4,"content":"src\/test\/java\/examples\/NegativeScenario[4:97]","start":1729926683709,"end":1729926684023,"title":"src\/test\/java\/examples\/NegativeScenario[4:97] 12:41:23.709-12:41:24.023 Remove Body data","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
